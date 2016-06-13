@@ -1,0 +1,90 @@
+body {
+    width:100%;
+    margin:auto;
+}
+.container{
+    padding-left: 75px;
+}
+.header{
+    text-align: center;
+    font-family: monaco;
+    font-size: 40px;
+}
+body {
+    padding-top: 40px;
+    font-family: monaco;
+}
+.pure-form{
+    font-family: monaco;
+}
+.pure-button pure-button-primary{
+    font-family: monaco;
+}
+input[type=text]{
+    font-family: monaco;
+    font-size: 16px;
+}
+/* make the input box a little response */
+input {
+    height:60px;
+    width:800px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-color:#cccccc;
+    padding:0 10px;
+}
+.btn {
+    padding-top: 40px;
+    padding-left: 370px;
+}
+#submit{
+    height:70px;
+    width:350px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+form {
+    font-weight: bold;
+}
+.footer{
+    position: fixed;
+    padding-left: 10px;
+    padding-top: 160px;
+    text-decoration: none;
+    bottom: 0;
+}
+#link{
+    text-decoration: none
+}
+#linkmsg{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#linkurl{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: blue;
+}
+#error{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+.flashes{
+    text-decoration: none;
+    color: red;
+    padding-left: 175px;
+}
+#qrcode {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:510px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+    </script>
+    <link rel="icon"
+          type="image/png"
+          href="http://blog.esponce.com/wp-content/uploads/2011/03/qr-code-icon.png">
+    <link rel="stylesheet"
+          href="yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link href="http://fonts.googleapis.com/css?family=Francois+One"
+          rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <div class="header">
+        <h2>URL Shortener</h2>
+    </div>
+
+    {% block content %}
+        <div class="container">
+            {% for message in get_flashed_messages() %}
+            <div class="flashes">
+                <li>{{ message }}</li>
+            </div>
+            {% endfor %}
+
+            {% block page_content %}
+            {% endblock %}
+        </div>
+    {% endblock %}
+
+    <!-- Footer section -->
+    <div class="footer">
+        <p>Made by eb</p>
+    </div>
+
+</body>
+</html>
